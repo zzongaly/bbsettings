@@ -1,134 +1,22 @@
+./host
 ls
-vi /boot/uEnv.txt 
-reboot
-ipconfig
-ifconfig
-mkdir /mnt/boot
-mount /dev/mmcblk0p1 /mnt/boot
-vi /mnt/boot/uEnv.txt
-vi /mnt/boot/nfs-uEnv.txt 
-ls
-ls
+vi pru.c
 cd ..
-ls
-cd boot/ls
-cd boot/
-ls
-vi uEnv.txt 
-ls /dev/mmcblk0p1
-mount /dev/mmcblk0p1 /mnt/boot
-cd /opt/scripts/tools/
-./update_kernel.sh 
-cd ~
-ntpdate -b -s -u pool.ntp.org
-iwconfig
-vi /etc/network/interfaces 
-fg
-vi /etc/network/interfaces 
-vi /etc/network/interfaces 
-ifup ra0
-vi /etc/network/interfaces 
-ifup ra0
-ifup ra0
-ifdown
-ifdown ra0
-ifup ra0
-ping google.com
 cd ~
 ls
-ntpdate -b -s -u pool.ntp.org
-apt-get update && apt-get install git
-cd /opt/scripts/tools/
-./update_kernel.sh 
-reboot
-git clone https://github.com/adafruit/wifi-reset.git
-cd wifi-reset
-chmod +x install.sh
-./install.sh
+ls -a
+git init
+rm .git
+rm -rf .git
 ls
-ping google.com
-ifdown ra0
-ifup ra0
-cd ~
+ls -a
+git init 
+git add all
+git add .
 ls
-mkdir PRU
-cd PRU/
-git clone https://github.com/rvega/bbb-pru.git
-ls
-cd bbb-pru/
-ls
-cd vendors/
-ls
-git clone https://github.com/rvega/am335x_pru_package.git
-ls
-cd am335x_pru_package/
-ls
-git pull 544a20b
-git fetch 544a20b
-git checkout 544a20b
-git status
-git diff
-cd ..
-./install.sh 
-ls
-cd ..
-cd ..
-ls
-ls
-chmod +x ti_cgt_pru_2.0.0B2_armlinuxa8hf_installer.sh 
-./ti_cgt_pru_2.0.0B2_armlinuxa8hf_installer.sh 
-ls
-cd pru_2.0.0B2/
-ls
-cd ..
-ls
-rm ti_cgt_pru_2.0.0B2_armlinuxa8hf_installer.sh 
-ls
-cd 0
-vi 0
-rm 0
-ls
-cd bbb-pru/
-ls
-cd vendors/
-ls
-cp -r ~/PRU/pru_2.0.0B2/ pru_2.0.0B2/
-ls
-./install.sh 
-ls
-ls
-cd ..
-ls
-cd apps/
-ls
-cd assembler/
-ls
-make
-ls
-cd ..
-ls
-cd gpio/
-ls
-make
-ls
-cd .
-ls
-ls
-cd /
-ls
-cd l
-cd lib
-ls
-cd ..
-ls
-cd usr/
-ls
-cd lib/
-ls
-ls
-cd..
-ls
-cd ~
+git commit
+git remote add origin https://github.com/zzongaly/bbsettings.git
+git push -u origin master
 ls
 cd PRU/
 ls
@@ -136,195 +24,101 @@ cd bbb-pru/
 ls
 cd apps/
 ls
-cd gpio/
+cd touchpad/
 ls
 make
-cd ..
 ls
-cd ..
+cd P
+cd PRU/
 ls
-cd vendors/
-ls
-./install.sh 
-clpru
-cd ..
+cd bbb-pru/
 ls
 cd apps/
 ls
-cd gpio/
-ls
-make
-clpru
-ls
-cd ..
-cd ..
-ls
-cd vendors/
-ls
-cd pru_2.0.0B2/
-ls
-cd pru_2.0.0B2/
-ls
-mv * ../
-ls
-cd ..
-rmdir pru_2.0.0B2/
-ls
-cd ..
-cd ..
-ls
-cd apps/
-ls
-cd gpio/
-ls
-make
-ls
-./host 
-ls
-cd .
-cd ..
-ls
-cd assembler/
+cd touchpad/
 ls
 ./host
-cd ..
-ls
-cd ..
-ls
-cd vendors/
-ls
-./install.sh 
-ls
-cd ..
-ls
-cd apps/
-ls
-cd gpio/
-ls
+./host
+fg
+vi pru.c
+fg
+vimdiff pru.c ../gpio/pru.c
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+fg
+make
+./host
+fg
 make
 ./host 
-cd ..
-ls
-cd assembler/
-ls
+fg
 make
+./host
+fg
 make
-cd ..
-ls
-cd interrupts/
-ls
+./host
+fg
 make
-cd ..
-ls
-cd adc
+./host
+fg
 make
+./host
+fg
 make
-apt-get install libsndfile1-dev
-ls
-make
-ls
-cd ..
-ls
-cd assembler/
-ls
-make
-cd ..
-ls
-cd gpio/
-make
-ls
-./host 
-reboot
-ls
-cd PRU/
-ls
-cd bbb-pru/apps/gpio/
-ls
-make
-./host 
-ls
-cd ..
-cd assembler/
-./host 
-ls
-vi host.c
-cd ~
-ls
-git clone https://github.com/hodduc/vimfile.git
-ls
-cd vimfile/
-ls
-mv vimrc ~
-ls
-cd ..
-rmdir vimfile/
-rmdir -f vimfile/
-rm -rf vimfile/
-ls
-mv vimrc .vimrc
-vi .vimrc
-vi .vimrc
-vi .vimrc
-vi .vimrc
-vi .vimrc
-vi .vimrc
-vi .vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git
-ls
-cd Vundle.vim/
-ls
-ls
-cd ..
-rm -rf Vundle.vim/
-ls
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vi .vimrc
-git clone https://github.com/tomasr/molokai
-ls
-cd molokai/
-ls
-cd colors/
-ls
-mv molokai.vim ~/.vim
-ls
-cd ..
-cd ..
-ls
-rm -rf molokai/
-ls
-vi .vimrc
-cd .vim
-ls
-vi molokai.vim 
-mkdir colors
-ls
-mv molokai.vim colors
-ls
-cd ..
-ls
-vi .vimrc
+./host
+poweroff
 ls
 cd PRU/
 ls
 cd bbb-pru/
 ls
-cd vendors/
-ls
-ls am335x_pru_package/
-git status
-ls
-ls pru_2.0.0B2/
-ls
-./install.sh 
-ls
-cd ..
-ls
 cd apps/
 ls
-cd gpio/
+cd touchpad/
 make
+./host
+fg
 ls
-./host 
+vi pru.c
+make
+./host
+./host
+fg
+make
+./host
+fg
+make
+./host
+vi host.c
+fg
+make
+./host
+fg
+make
+./host
+./host
+fg
+make
+./host
+fg
+ls
+cp pru.c pru.c.backup
+vi pru.c
+make
+./host
 ls
 cd ..
 ls
@@ -332,73 +126,375 @@ cd ..
 ls
 cd device-tree-overlay/
 ls
-make
+vi PRU-DTO.dts 
 ls
 cd ..
-ls
-cd apps/
-ls
-cd gpio/
-ls
-./host 
-make
-./host 
-ls
-cd ..
-ls
-cd ..
-ls
-cd vendors/
-ls
-./install.sh 
-ls
-cd ..
-ls
 cd device-tree-overlay/
-ls
-make
-make
-ls
 vi Makefile 
 make install
-vi Makefile 
 make load
 ls
 cd ..
 ls
 cd apps/
 ls
-cd gpio/
+cd touchpad/
 ls
+./hosc
 ./host
 ls
-ls
-cd .
+vi host
+vi host.c
+fg
+make
+./host
+fg
 ls
 cd ..
 ls
-vimdiff gpio/host.c adc/host.c
+cd ..
 ls
-cd gpio/
+cd device-tree-overlay/
 ls
-vi pru.c
+vi PRU-DTO.dts 
+make
+fg
 ls
+vi PRU-DTO.dts
+make
 ls
-mkdir touchpanel
-mv touchpanel/ touchpad
+vi PRU-DTO.dts 
+fg
+make
+make install
+make load
+ls
+cd ..
+ls
+cd apps/
 ls
 cd touchpad/
 ls
+make
+./host
+ls
+ls
+ls
+fg
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+ls
+cd ..
+ls
+cd interrupts/
+ls
+ci pru.
 vi pru.c
-cd ..
-mv touchpad/ ..
 ls
 cd ..
 ls
-cd ~
+cd adc/
 ls
-vi .bashrc
-vi .bashrc
-vi .bash_profile
+vi pru.c
 ls
-exit
+fg
+make
+./host
+ls
+cd ..
+ls
+cd touchpad/
+ls
+make
+./host
+ls
+fg
+./host
+fg
+make
+./host
+ls
+fg
+make
+fg
+make
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+./host
+fg
+make
+./host
+fg
+make
+./host
+ghg
+fg
+make
+./host
+fg
+fg
+reboot
+ls
+cd PRU/
+cd bbb-pru/
+ls
+cd apps/
+ls
+cd touchpad/
+ls
+make
+./host
+fg
+ls
+vi pru.c
+make
+ls
+./host
+fg
+./host
+make
+./host
+fg
+make
+./host
+ls
+fg
+make
+./host
+fg
+make
+./host
+fg
+./host
+ls
+fg
+make
+./host
+fg
+make
+reboot
+ls
+ls
+cd P
+cd PRU/bbb-pru/
+ls
+cd apps/
+ls
+cd touchpad/
+ls
+make
+./host
+fg
+ls
+vi pru.c
+make
+./host
+fg
+make
+./host
+fg
+fg
+make
+./host
+fg
+make
+./host
+ls
+cd PRU/
+ls
+cd bbb-pru/
+ls
+l
+ls
+cd ..
+ls
+cd bbb-pru/
+ls
+cd apps/
+ls
+cd adc
+ls
+vi pru.c
+ls
+cd PRU/
+ls
+cd bbb-pru/
+ls
+cd apps/
+ls
+cd touchpad/
+ls
+vi host.c
+vi pru.c
+ls
+make
+vi host.c
+make
+fg
+fg
+ls
+ls ../adc
+vi Makefile 
+ls
+make
+ls
+fg
+fg
+fg
+ls
+cd ..
+ls
+cp -r adc touchpad2
+ls
+cd touchpad
+ls
+cd ..
+cd touchpad2
+ls
+mv pru.c pru.c.backup
+ls
+cd ..
+ls
+cp touchpad/pru.c touchpad2/pru.c
+cd touchpad2
+ls
+make
+./host
+./host
+./host
+ls
+vi pru.c
+make
+./host
+fg
+make
+./host
+fg
+./host
+fg
+vi host.c
+make
+fg
+make
+./host
+https://kr.battle.net/shop/ko/checkout/inicis-credit-card/86714241-331000137610000
+ls
+vi pru.c
+fg
+make
+./host
+fg
+vi pru.c
+fg 1
+ls
+ls
+make
+./host
+ls
+vi out.wav
+fg
+fg 2
+make
+ls
+./host 
+./host 
+./host 
+fg
+ls
+ls
+./host 
+./host 
+./host 
+./host 
+./host 
+./host 
+./host 
+./host 
+./host 
+./host 
+fg
+fg
+make
+./host
+./host
+fg
+make
+./host
+fg 2
+fg 1
+make
+/host
+./host 
+fg
+make
+./host
+fg
+fg 2
+fg 
+make
+./host
+fg
+make
+./host
+./host
+./host
+./host
+./host
+fg
+poweroff
+ps aux
+kill 5567

@@ -8,7 +8,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/molo
+~MSle0~/fifo1
+
+# Last Substitute Search Pattern:
+~MSle0&   
 
 # Last Substitute String:
 $
@@ -16,16 +19,46 @@ $
 # Command Line History (newest to oldest):
 :q
 :w
-:W
-:e .
-:e 
-:e
-:wq
-:set paste
+:e host.c
 :Q
+:diffthis
+:ver
+:e .
+:221
+:vert diffs ../adc/host.c
+:diffs
+:diff
+:vimdiff
+:%s/   /\t/g
+:W
+:%s/    /\t/g
+:e /
+:s
+:%s/P9_13/P9_14/g
+:%s/P9_11/P9_12/g
+:%s/value13/value14/g
 
 # Search String History (newest to oldest):
+?/f
+?/fifo1
+?/*
+?/asdasdasd
+?/close_soun
+?/close
+?/asdasd
+?/min
+?    
+?/sadasdsad
+?     
+? P9_13
+? P9_11
+? value13
+? value11
+?/assdasdasd
+? /   
 ?/molo
+?/finish
+?/main
 
 # Expression History (newest to oldest):
 
@@ -34,53 +67,96 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-			// P9_11 pin set as high.
-"1	LINE	0
-	
+"0	CHAR	0
+	p
+""1	LINE	0
+			*/
 "2	LINE	0
-			// TODO : using GPIO_DATA_OUT register, write 13 pin high signal
+		*/
 "3	LINE	0
-			//
+		*/
 "4	LINE	0
-			
+		/*
 "5	LINE	0
-		return 0;
-	}
+			*/
 "6	LINE	0
-	
+			/*
 "7	LINE	0
-	
+			*/
 "8	LINE	0
-		
+			/*
 "9	LINE	0
 	
-""-	CHAR	0
-	1
+"-	CHAR	0
+	 
 
 # File marks:
-'0  68  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
-'1  44  9  ~/PRU/bbb-pru/apps/touchpad/pru.c
-'2  51  66  ~/.bash_profile
-'3  15  0  ~/.bashrc
-'4  1271  0  ~/.bashrc
-'5  1  0  ~/PRU/bbb-pru/apps/gpio/touchpad/pru.c
-'6  1  0  ~/PRU/bbb-pru/apps/gpio/pru.c
-'7  240  0  ~/PRU/bbb-pru/apps/adc/host.c
-'8  2  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
-'9  1  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
+'0  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
+'1  29  0  ~/PRU/bbb-pru/apps/adc/host.c
+'2  1  0  ~/PRU/bbb-pru/apps/adc/host.c
+'3  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'4  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
+'5  100  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
+'6  100  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+'7  247  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'8  240  6  ~/PRU/bbb-pru/apps/touchpad/host.c
+'9  240  29  ~/PRU/bbb-pru/apps/touchpad/host.c
 
 # Jumplist (newest first):
--'  68  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  44  9  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  74  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  78  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  40  51  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  48  17  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  49  13  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  52  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  63  6  ~/PRU/bbb-pru/apps/touchpad/pru.c
--'  37  1  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
+-'  8  17  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  228  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  101  10  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  142  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  91  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  71  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  76  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  57  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  29  0  ~/PRU/bbb-pru/apps/adc/host.c
+-'  183  5  ~/PRU/bbb-pru/apps/adc/host.c
+-'  50  3  ~/PRU/bbb-pru/apps/adc/host.c
+-'  2  0  ~/PRU/bbb-pru/apps/adc/host.c
+-'  9  0  ~/PRU/bbb-pru/apps/adc
+-'  216  3  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  1  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  1  0  ~/PRU/bbb-pru/apps/adc/host.c
+-'  71  5  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  11  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  6  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  52  1  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  190  24  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  149  5  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  22  1  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  23  1  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  130  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  136  10  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  33  8  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  34  8  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  27  25  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  38  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  75  2  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  74  20  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  41  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  100  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  247  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
+-'  194  0  ~/PRU/bbb-pru/apps/adc/pru.c
+-'  211  0  ~/PRU/bbb-pru/apps/adc/pru.c
+-'  240  3  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  217  0  ~/PRU/bbb-pru/apps/touchpad
+-'  7  8  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  235  0  ~/PRU/bbb-pru/apps/touchpad
+-'  26  11  ~/PRU/bbb-pru/apps/gpio/pru.c
+-'  82  0  ~/PRU/bbb-pru/apps/gpio
+-'  269  0  ~/PRU/bbb-pru/apps/touchpad
+-'  100  0  ~/PRU/bbb-pru/apps/gpio
+-'  40  2  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  97  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+-'  303  0  ~/PRU/bbb-pru/apps/touchpad
+-'  103  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+-'  247  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
 -'  1  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
 -'  51  66  ~/.bash_profile
 -'  1  0  ~/.bash_profile
@@ -91,7 +167,7 @@ $
 -'  1  0  ~/PRU/bbb-pru/apps/gpio/touchpad/pru.c
 -'  1  0  ~/PRU/bbb-pru/apps/gpio/pru.c
 -'  73  0  ~/PRU/bbb-pru/apps/gpio/pru.c
--'  240  0  ~/PRU/bbb-pru/apps/adc/host.c
+-'  243  0  ~/PRU/bbb-pru/apps/adc/host.c
 -'  2  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
 -'  1  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
 -'  36  8  ~/.vimrc
@@ -126,156 +202,268 @@ $
 -'  23  25  ~/.vimrc
 -'  1  0  ~/.vimrc
 -'  1  0  ~/.vim/molokai.vim
--'  2  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
--'  1  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
--'  23  25  ~/.vimrc
--'  1  0  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
--'  23  25  ~/.vimrc
--'  1  0  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
--'  23  25  ~/.vimrc
--'  1  0  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
--'  23  25  ~/.vimrc
--'  1  0  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  240  0  ~/PRU/bbb-pru/apps/adc/host.c
--'  2  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
--'  1  0  ~/PRU/bbb-pru/device-tree-overlay/Makefile
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
--'  23  25  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
-> ~/PRU/bbb-pru/apps/touchpad/pru.c
-	"	68	0
-	^	68	0
-	.	68	0
-	+	1	0
-	+	6	51
-	+	78	0
-	+	78	1
-	+	12	8
-	+	12	1
-	+	12	1
-	+	12	30
-	+	78	0
-	+	29	9
-	+	29	31
-	+	29	49
-	+	29	24
-	+	78	1
-	+	29	32
-	+	29	23
-	+	29	23
-	+	29	23
-	+	78	0
-	+	37	0
-	+	30	26
-	+	31	34
-	+	32	3
-	+	32	0
-	+	33	1
-	+	34	0
-	+	78	2
-	+	44	65
-	+	45	0
-	+	45	1
+> ~/PRU/bbb-pru/apps/touchpad2/pru.c
+	"	181	0
+	^	98	4
+	.	98	3
+	+	113	2
+	+	115	1
+	+	47	3
+	+	71	0
+	+	76	3
+	+	85	4
+	+	85	0
+	+	86	4
+	+	85	37
+	+	86	2
+	+	85	4
+	+	99	3
 	+	47	0
-	+	63	0
-	+	62	0
-	+	63	0
-	+	47	1
-	+	48	2
-	+	49	13
-	+	52	0
-	+	49	0
-	+	50	2
-	+	52	0
-	+	51	0
-	+	59	49
-	+	61	25
-	+	61	3
-	+	62	1
-	+	63	1
-	+	64	2
-	+	65	2
-	+	66	2
-	+	78	0
-	+	67	0
-	+	63	29
-	+	64	14
-	+	66	21
-	+	64	18
-	+	48	18
-	+	50	21
-	+	63	15
-	+	78	0
-	+	47	15
-	+	38	2
-	+	38	50
-	+	42	0
-	+	40	0
-	+	53	0
-	+	38	0
-	+	54	24
-	+	55	24
-	+	57	24
-	+	56	22
-	+	58	0
-	+	70	0
-	+	78	0
-	+	29	0
-	+	78	0
+	+	71	0
 	+	76	0
-	+	44	3
-	+	45	0
-	+	44	30
-	+	60	0
-	+	61	0
-	+	60	28
-	+	59	26
-	+	43	0
-	+	44	0
-	+	43	9
-	+	36	12
-	+	47	0
-	+	36	9
-	+	44	27
-	+	60	26
-	+	69	12
-	+	68	0
+	+	99	0
+	+	8	0
+	+	178	2
+	+	184	2
+	+	8	17
+	+	178	0
+	+	184	0
+	+	239	4
+	+	238	0
+	+	241	1
+	+	224	2
+	+	232	0
+	+	230	2
+	+	70	3
+	+	88	0
+	+	98	3
 
-> ~/PRU/bbb-pru/apps/gpio/pru.c
-	"	4	0
+> ~/PRU/bbb-pru/apps/touchpad2/host.c
+	"	130	0
+	^	129	2
+	.	130	11
+	+	222	28
+	+	222	3
+	+	222	18
+	+	224	0
+	+	222	18
+	+	223	12
+	+	222	4
+	+	137	10
+	+	134	0
+	+	130	0
+	+	36	0
+	+	135	0
+	+	129	0
+	+	130	11
 
 > ~/PRU/bbb-pru/apps/gpio/host.c
 	"	191	0
+
+> ~/PRU/bbb-pru/apps/touchpad2/out.wav
+	"	1	0
+
+> ~/PRU/bbb-pru/apps/touchpad/host.c
+	"	29	0
+	.	216	0
+	+	240	27
+	+	240	29
+	+	240	0
+	+	240	0
+	+	240	0
+	+	240	29
+	+	240	30
+	+	240	7
+	+	240	6
+	+	240	7
+	+	240	7
+	+	240	0
+	+	240	0
+	+	10	0
+	+	28	0
+	+	88	0
+	+	106	0
+	+	108	0
+	+	155	0
+	+	120	0
+	+	119	0
+	+	120	0
+	+	161	0
+	+	216	0
+	+	178	0
+	+	234	0
+	+	240	0
+	+	235	0
+	+	240	0
+	+	242	0
+	+	244	0
+	+	243	0
+	+	216	0
+	+	217	0
+	+	216	0
+
+> ~/PRU/bbb-pru/apps/adc/host.c
+	"	29	0
+	.	227	0
+	+	198	0
+	+	212	0
+	+	222	0
+	+	227	0
+
+> ~/PRU/bbb-pru/apps/touchpad/Makefile
+	"	1	0
+
+> ~/PRU/bbb-pru/apps/adc/Makefile
+	"	8	0
+
+> ~/PRU/bbb-pru/apps/touchpad/pru.c
+	"	6	0
+	^	6	0
+	.	6	0
+	+	45	0
+	+	44	28
+	+	43	25
+	+	45	0
+	+	45	0
+	+	100	0
+	+	73	0
+	+	100	0
+	+	71	9
+	+	72	28
+	+	74	27
+	+	73	9
+	+	75	0
+	+	45	0
+	+	41	0
+	+	71	0
+	+	38	0
+	+	41	0
+	+	38	2
+	+	26	0
+	+	38	0
+	+	26	1
+	+	27	25
+	+	38	0
+	+	28	0
+	+	29	1
+	+	35	0
+	+	29	1
+	+	30	1
+	+	31	1
+	+	32	8
+	+	33	8
+	+	32	5
+	+	31	32
+	+	33	0
+	+	34	0
+	+	33	0
+	+	29	0
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	0
+	+	20	11
+	+	37	11
+	+	38	0
+	+	109	0
+	+	109	0
+	+	129	0
+	+	131	0
+	+	23	0
+	+	22	1
+	+	23	0
+	+	22	1
+	+	21	30
+	+	22	5
+	+	23	5
+	+	24	5
+	+	23	5
+	+	119	0
+	+	148	5
+	+	147	27
+	+	149	0
+	+	70	2
+	+	47	16
+	+	47	0
+	+	52	1
+	+	53	0
+	+	47	0
+	+	57	0
+	+	58	0
+	+	52	0
+	+	61	2
+	+	62	2
+	+	63	2
+	+	64	2
+	+	65	2
+	+	66	2
+	+	67	2
+	+	68	2
+	+	61	0
+	+	63	18
+	+	64	16
+	+	77	0
+	+	76	0
+	+	57	38
+	+	58	4
+	+	57	2
+	+	58	2
+	+	57	5
+	+	56	3
+	+	55	3
+	+	54	3
+	+	53	3
+	+	12	0
+	+	11	15
+	+	15	0
+	+	16	0
+	+	7	0
+	+	9	0
+	+	6	0
+
+> ~/PRU/bbb-pru/apps/touchpad/pru.backup.c
+	"	27	0
+
+> ~/PRU/bbb-pru/apps/touchpad/pru.c.backup
+	"	58	0
+
+> ~/PRU/bbb-pru/apps/gpio/pru.c
+	"	53	0
+	.	22	30
+	+	10	0
+	+	49	0
+	+	57	0
+	+	22	30
+
+> ~/PRU/bbb-pru/apps/adc/pru.c
+	"	17	0
+	.	24	0
+	+	24	0
+
+> ~/PRU/bbb-pru/apps/interrupts/pru.c
+	"	1	0
+
+> ~/PRU/bbb-pru/device-tree-overlay/PRU-DTO.dts
+	"	22	27
+	^	47	32
+	.	22	27
+	+	20	15
+	+	22	15
+	+	47	31
+	+	20	27
+	+	22	27
+
+> ~/PRU/bbb-pru/apps/touchpad/host
+	"	1	0
+
+> ~/PRU/bbb-pru/device-tree-overlay/Makefile
+	"	2	0
+	^	2	0
+	.	1	0
+	+	1	0
 
 > ~/.bash_profile
 	"	51	66
@@ -295,15 +483,6 @@ $
 
 > ~/PRU/bbb-pru/apps/gpio/touchpad/pru.c
 	"	1	0
-
-> ~/PRU/bbb-pru/apps/adc/host.c
-	"	240	0
-
-> ~/PRU/bbb-pru/device-tree-overlay/Makefile
-	"	2	0
-	^	2	0
-	.	1	0
-	+	1	0
 
 > ~/.vimrc
 	"	36	8
