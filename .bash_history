@@ -1,23 +1,3 @@
-./host
-ls
-vi pru.c
-cd ..
-cd ~
-ls
-ls -a
-git init
-rm .git
-rm -rf .git
-ls
-ls -a
-git init 
-git add all
-git add .
-ls
-git commit
-git remote add origin https://github.com/zzongaly/bbsettings.git
-git push -u origin master
-ls
 cd PRU/
 ls
 cd bbb-pru/
@@ -498,3 +478,23 @@ fg
 poweroff
 ps aux
 kill 5567
+ls
+cd PRU/
+ls
+cd bbb-pru/
+ls
+cd apps/
+ls
+cd touchpad2
+ls
+./host
+ls
+make
+./host
+fg
+./host
+vi pru.c
+make
+ls
+./host
+poweroff
