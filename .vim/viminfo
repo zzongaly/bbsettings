@@ -18,6 +18,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
+:Wq
 :q
 :e .
 :w
@@ -36,7 +37,6 @@ $
 :e /
 :s
 :%s/P9_13/P9_14/g
-:%s/P9_11/P9_12/g
 
 # Search String History (newest to oldest):
 ?/f
@@ -91,9 +91,9 @@ $
 	 
 
 # File marks:
-'0  1  16  ~/.gitignore
-'1  1  0  ~/PRU/pru_2.0.0B2/.gitignore
-'2  1  19  ~/.git/COMMIT_EDITMSG
+'0  1  7  ~/.git/COMMIT_EDITMSG
+'1  1  16  ~/.gitignore
+'2  1  0  ~/PRU/pru_2.0.0B2/.gitignore
 '3  9  0  ~/.git/config
 '4  1  0  ~/.git/info/exclude
 '5  1  0  ~/.viminfo
@@ -103,9 +103,9 @@ $
 '9  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
 
 # Jumplist (newest first):
+-'  1  7  ~/.git/COMMIT_EDITMSG
 -'  1  16  ~/.gitignore
 -'  1  0  ~/PRU/pru_2.0.0B2/.gitignore
--'  1  19  ~/.git/COMMIT_EDITMSG
 -'  9  0  ~/.git/config
 -'  17  0  ~/.git
 -'  1  0  ~/.git/index
@@ -200,9 +200,14 @@ $
 -'  19  0  ~/.vimrc
 -'  21  5  ~/.vimrc
 -'  9  0  ~/.git/config
--'  17  0  ~/.git
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/COMMIT_EDITMSG
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	7
 
 > ~/.gitignore
 	"	1	16
@@ -215,12 +220,6 @@ $
 	^	1	1
 	.	1	0
 	+	1	0
-
-> ~/.git/COMMIT_EDITMSG
-	"	1	19
-	^	1	20
-	.	1	19
-	+	1	19
 
 > ~/.git/description
 	"	1	0
