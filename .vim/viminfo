@@ -17,6 +17,7 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :e .
 :w
@@ -36,7 +37,6 @@ $
 :s
 :%s/P9_13/P9_14/g
 :%s/P9_11/P9_12/g
-:%s/value13/value14/g
 
 # Search String History (newest to oldest):
 ?/f
@@ -91,18 +91,21 @@ $
 	 
 
 # File marks:
-'0  9  0  ~/.git/config
-'1  1  0  ~/.git/info/exclude
-'2  1  0  ~/.viminfo
-'3  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'4  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'5  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'6  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
-'7  29  0  ~/PRU/bbb-pru/apps/adc/host.c
-'8  1  0  ~/PRU/bbb-pru/apps/adc/host.c
-'9  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'0  1  16  ~/.gitignore
+'1  1  0  ~/PRU/pru_2.0.0B2/.gitignore
+'2  1  19  ~/.git/COMMIT_EDITMSG
+'3  9  0  ~/.git/config
+'4  1  0  ~/.git/info/exclude
+'5  1  0  ~/.viminfo
+'6  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'7  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'8  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'9  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
 
 # Jumplist (newest first):
+-'  1  16  ~/.gitignore
+-'  1  0  ~/PRU/pru_2.0.0B2/.gitignore
+-'  1  19  ~/.git/COMMIT_EDITMSG
 -'  9  0  ~/.git/config
 -'  17  0  ~/.git
 -'  1  0  ~/.git/index
@@ -196,8 +199,28 @@ $
 -'  35  0  ~/.vimrc
 -'  19  0  ~/.vimrc
 -'  21  5  ~/.vimrc
+-'  9  0  ~/.git/config
+-'  17  0  ~/.git
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> ~/PRU/pru_2.0.0B2/.gitignore
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/.git/COMMIT_EDITMSG
+	"	1	19
+	^	1	20
+	.	1	19
+	+	1	19
 
 > ~/.git/description
 	"	1	0
