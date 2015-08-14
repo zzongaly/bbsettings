@@ -17,8 +17,8 @@
 $
 
 # Command Line History (newest to oldest):
-:w
 :q
+:w
 :e host.c
 :Q
 :diffthis
@@ -67,9 +67,9 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	p
-""1	LINE	0
+""0	LINE	0
+			/*
+"1	LINE	0
 			/*
 "2	LINE	0
 			*/
@@ -91,18 +91,23 @@ $
 	 
 
 # File marks:
-'0  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'1  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'2  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'3  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
-'4  29  0  ~/PRU/bbb-pru/apps/adc/host.c
-'5  1  0  ~/PRU/bbb-pru/apps/adc/host.c
-'6  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
-'7  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
-'8  100  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
-'9  100  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
+'0  1  0  ~/.git/info/exclude
+'1  1  0  ~/.viminfo
+'2  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'3  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'4  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'5  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
+'6  29  0  ~/PRU/bbb-pru/apps/adc/host.c
+'7  1  0  ~/PRU/bbb-pru/apps/adc/host.c
+'8  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'9  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
 
 # Jumplist (newest first):
+-'  1  0  ~/.git/info/exclude
+-'  9  0  ~/.git/info
+-'  1  0  ~/.viminfo
+-'  17  0  ~/
+-'  8  0  ~/
 -'  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
 -'  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
 -'  181  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
@@ -196,13 +201,14 @@ $
 -'  21  5  ~/.vimrc
 -'  23  25  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  36  8  ~/.vimrc
--'  1  0  ~/.vim/molokai.vim
--'  35  0  ~/.vimrc
--'  19  0  ~/.vimrc
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/info/exclude
+	"	1	0
+
+> ~/.viminfo
+	"	1	0
 
 > ~/PRU/bbb-pru/apps/touchpad2/pru.c
 	"	42	2
