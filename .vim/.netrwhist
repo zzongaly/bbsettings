@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/root/.git/refs/remotes'
-let g:netrw_dirhist_2='/root/.git/refs'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/root/.git/logs/refs'
+let g:netrw_dirhist_2='/root/.git/logs'
 let g:netrw_dirhist_3='/root/.git'
-let g:netrw_dirhist_4='/root'
-let g:netrw_dirhist_5='/root/.git'
-let g:netrw_dirhist_6='/root/.git/info'

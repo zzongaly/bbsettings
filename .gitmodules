@@ -1,0 +1,12 @@
+[submodule "PRU/bbb-pru"]
+	path = PRU/bbb-pru
+	url = git://github.com/zzongaly/bbsettings.git
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = git://github.com/zzongaly/bbsettings.git
+[submodule "PRU/bbb-pru/vendors/am335x_pru_package"]
+	path = PRU/bbb-pru/vendors/am335x_pru_package
+	url = git://github.com/zzongaly/bbsettings.git
+[submodule "wifi-reset"]
+	path = wifi-reset
+	url = git://github.com/zzongaly/bbsettings.git

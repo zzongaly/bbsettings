@@ -1,0 +1,7 @@
+[user]
+	name = Jingun Jung
+	email = zzongaly@gmail.com
+[core]
+	editor = vi
+[merge]
+	tool = vimdiff
