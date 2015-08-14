@@ -1,25 +1,3 @@
-cd PRU/
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
-ls
-make
-ls
-cd P
-cd PRU/
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
-ls
-./host
-./host
-fg
 vi pru.c
 fg
 vimdiff pru.c ../gpio/pru.c
@@ -498,3 +476,25 @@ make
 ls
 ./host
 poweroff
+ls
+cd PRU/
+cd bbb-pru/apps/touchpad2
+ls
+make
+./host
+vi pru.c
+make
+./host
+git add .
+git commit
+git push
+git push
+cd /
+git push
+cd ~
+git push
+git diff
+git add.
+git add .
+git commit
+git push

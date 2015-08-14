@@ -70,51 +70,52 @@ $
 "0	CHAR	0
 	p
 ""1	LINE	0
-			*/
-"2	LINE	0
-		*/
-"3	LINE	0
-		*/
-"4	LINE	0
-		/*
-"5	LINE	0
-			*/
-"6	LINE	0
 			/*
+"2	LINE	0
+			*/
+"3	LINE	0
+			*/
+"4	LINE	0
+		*/
+"5	LINE	0
+		*/
+"6	LINE	0
+		/*
 "7	LINE	0
 			*/
 "8	LINE	0
 			/*
 "9	LINE	0
-	
+			*/
 "-	CHAR	0
 	 
 
 # File marks:
-'0  73  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'1  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
-'2  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
-'3  29  0  ~/PRU/bbb-pru/apps/adc/host.c
-'4  1  0  ~/PRU/bbb-pru/apps/adc/host.c
-'5  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
-'6  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
-'7  100  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
-'8  100  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
-'9  247  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'0  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'1  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'2  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+'3  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
+'4  29  0  ~/PRU/bbb-pru/apps/adc/host.c
+'5  1  0  ~/PRU/bbb-pru/apps/adc/host.c
+'6  245  0  ~/PRU/bbb-pru/apps/touchpad/host.c
+'7  80  1  ~/PRU/bbb-pru/apps/adc/pru.c
+'8  100  3  ~/PRU/bbb-pru/apps/touchpad/pru.c
+'9  100  0  ~/PRU/bbb-pru/apps/touchpad/pru.c
 
 # Jumplist (newest first):
--'  73  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  183  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  42  2  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  72  3  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  181  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
 -'  1  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
 -'  130  0  ~/PRU/bbb-pru/apps/touchpad2/host.c
 -'  8  17  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  230  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  103  10  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  144  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  93  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  72  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  78  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
--'  58  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  228  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  101  10  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  142  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  91  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  71  1  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  76  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
+-'  57  0  ~/PRU/bbb-pru/apps/touchpad2/pru.c
 -'  29  0  ~/PRU/bbb-pru/apps/adc/host.c
 -'  183  5  ~/PRU/bbb-pru/apps/adc/host.c
 -'  50  3  ~/PRU/bbb-pru/apps/adc/host.c
@@ -200,47 +201,46 @@ $
 -'  1  0  ~/.vim/molokai.vim
 -'  35  0  ~/.vimrc
 -'  19  0  ~/.vimrc
--'  21  5  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
 > ~/PRU/bbb-pru/apps/touchpad2/pru.c
-	"	73	3
-	^	73	4
-	.	73	3
-	+	115	2
-	+	117	1
-	+	48	3
-	+	72	0
-	+	78	3
-	+	87	4
-	+	87	0
-	+	88	4
-	+	87	37
-	+	88	2
-	+	87	4
-	+	101	3
-	+	48	0
-	+	72	0
-	+	78	0
-	+	101	0
+	"	42	2
+	.	42	0
+	+	113	2
+	+	115	1
+	+	47	3
+	+	71	0
+	+	76	3
+	+	85	4
+	+	85	0
+	+	86	4
+	+	85	37
+	+	86	2
+	+	85	4
+	+	99	3
+	+	47	0
+	+	71	0
+	+	76	0
+	+	99	0
 	+	8	0
-	+	180	2
-	+	186	2
+	+	178	2
+	+	184	2
 	+	8	17
-	+	180	0
-	+	186	0
-	+	241	4
-	+	240	0
-	+	243	1
-	+	226	2
-	+	234	0
-	+	232	2
-	+	71	3
-	+	90	0
-	+	100	3
+	+	178	0
+	+	184	0
+	+	239	4
+	+	238	0
+	+	241	1
+	+	224	2
+	+	232	0
+	+	230	2
+	+	70	3
+	+	88	0
+	+	98	3
 	+	42	3
-	+	73	3
+	+	72	0
+	+	42	0
 
 > ~/PRU/bbb-pru/apps/touchpad2/host.c
 	"	130	0
