@@ -1,0 +1,104 @@
+******************************************************************************
+                     PRU Linker Unix v2.0.0                    
+******************************************************************************
+>> Linked Sun Aug  2 14:03:09 2015
+
+OUTPUT FILE NAME:   <pru.elf>
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 000005c8
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  PRUIMEM               00000000   00001000  000005ec  00000a14  RWIX
+
+PAGE 1:
+  PRUDMEM               00000000   00001000  0000010c  00000ef4  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000000    000005ec     
+                  00000000    0000030c     pru.obj (.text:main)
+                  0000030c    00000260     pru.obj (.text:init_adc)
+                  0000056c    0000005c     pru.obj (.text:init_digital)
+                  000005c8    00000014     rtspruv2_le.lib : boot_special.obj (.text:_c_int00_noinit_noargs_noexit)
+                  000005dc    00000008                     : exit.obj (.text:abort)
+                  000005e4    00000008                     : exit.obj (.text:loader_exit)
+
+.stack     1    00000000    00000100     UNINITIALIZED
+                  00000000    00000004     rtspruv2_le.lib : boot.obj (.stack)
+                  00000004    000000fc     --HOLE--
+
+.bss       1    00000108    00000004     UNINITIALIZED
+                  00000108    00000004     pru.obj (.bss)
+
+.data      1    00000100    00000008     
+                  00000100    00000008     pru.obj (.data)
+
+.cinit     1    00000000    00000000     UNINITIALIZED
+
+
+SEGMENT ATTRIBUTES
+
+    id tag      seg value
+    -- ---      --- -----
+     0 PHA_PAGE 1   1    
+     1 PHA_PAGE 2   1    
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+000005e4   C$$EXIT
+00000100   __TI_STACK_END
+00000100   __TI_STACK_SIZE
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_c_int00
+00000001   __TI_exit
+ffffffff   __binit__
+ffffffff   __c_args__
+000005c8   _c_int00_noinit_noargs_noexit
+00000000   _stack
+000005dc   abort
+ffffffff   binit
+00000108   buffer
+00000104   finish
+0000030c   init_adc
+0000056c   init_digital
+00000000   main
+00000100   shared_ram
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   _stack
+00000000   main
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_c_int00
+00000001   __TI_exit
+00000100   __TI_STACK_END
+00000100   __TI_STACK_SIZE
+00000100   shared_ram
+00000104   finish
+00000108   buffer
+0000030c   init_adc
+0000056c   init_digital
+000005c8   _c_int00_noinit_noargs_noexit
+000005dc   abort
+000005e4   C$$EXIT
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[19 symbols]
