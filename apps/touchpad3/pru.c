@@ -2,7 +2,7 @@
 #define HWREG(x) (*((volatile unsigned int *)(x)))
 #define GPIO0 0x44e07000
 #define GPIO1 0x4804c000
-#define DELAY 10000 //0.5ms ?
+#define DELAY 1000000 //0.5ms ?
 
 #define block_size 128
 #define channels 2
@@ -127,10 +127,10 @@ int main(int argc, const char *argv[]){
 		__R31 = 0;
 		// FIFO0 : adc0
 		fifo0_count = HWREG(FIFO0_COUNT);
-
 		for(i=0; i<fifo0_count; i++){
 			data = HWREG(FIFO0_DATAOUT);
-			sample = data & 0xfff; 
+			which_buffer = (data & (0xf << 16))>>16;
+			sample = data & 0xfff;
 			buffer[(which_buffer*block_size*channels) + buffer_count] = sample;
 			buffer_count ++;
 		}
@@ -144,7 +144,6 @@ int main(int argc, const char *argv[]){
 			shared_ram[3] = fifo0_count;
 			__R31 = 35;
 			buffer_count = 0;
-			which_buffer = !which_buffer;
 		}
 
 		x = sample;
@@ -154,13 +153,26 @@ int main(int argc, const char *argv[]){
 		HWREG(GPIO_DATAOUT) |= (1<<VERTICAL_OUT);
 		for(i=0;i<DELAY;i++);
 
+		/*
 		// FIFO1 : adc1
 		fifo1_count = HWREG(FIFO1_COUNT);
 		for(i=0; i<fifo1_count; i++){
-			 data = HWREG(FIFO1_DATAOUT);
-			 sample = data & 0xfff; 
-			 buffer[(which_buffer*block_size*channels) + buffer_count] = sample;
-			 buffer_count ++;
+			data = HWREG(FIFO1_DATAOUT);
+			which_buffer = (data & (0xf << 16))>>16;
+			sample = data & 0xfff; 
+			buffer[(which_buffer*block_size*channels) + buffer_count] =  sample;
+			buffer_count ++;
+		}
+		*/
+
+		// FIFO0 : adc1
+		fifo0_count = HWREG(FIFO0_COUNT);
+		for(i=0; i<fifo0_count; i++){
+			data = HWREG(FIFO0_DATAOUT);
+			which_buffer = (data & (0xf << 16))>>16;
+			sample = data & 0xfff;
+			buffer[(which_buffer*block_size*channels) + buffer_count] = sample;
+			buffer_count ++;
 		}
 
 		if(buffer_count >= block_size*channels){
@@ -172,9 +184,8 @@ int main(int argc, const char *argv[]){
 			shared_ram[3] = fifo1_count;
 			__R31 = 35;
 			buffer_count = 0;
-			which_buffer = !which_buffer;
 		}
-		 y = sample;
+		y = sample;
 
 		if (x < 350 || y < 550){
 			prevX = 0;
@@ -473,11 +484,11 @@ void init_adc(){
 	// fs = 24MHz / (CLK_DIV*2*Channels*(OpenDly+Average*(14+SampleDly)))
 	// We want 48KHz. (Compromising to 50KHz)
 	unsigned int clock_divider = 4;
-	unsigned int open_delay = 4;
-	unsigned int average = 1;	// can be 0 (no average), 1 (2 samples), 
+	unsigned int open_delay = 2;
+	unsigned int average = 0;	// can be 0 (no average), 1 (2 samples), 
 					// 2 (4 samples),	3 (8 samples) 
 					// or 4 (16 samples)
-	unsigned int sample_delay = 4;
+	unsigned int sample_delay = 2;
 
 	// Set clock divider (set register to desired value minus one). 
 	// ADC_CLKDIV register
@@ -489,19 +500,22 @@ void init_adc(){
 	// Disable all steps. STEPENABLE register
 	HWREG(0x44e0d054) &= ~(0xff);
 
-	// Unlock step config register. ACD_CTRL register
+	// Unlock step config register. ADC_CTRL register
 	HWREG(0x44e0d040) |= (0x01 << 2);
 
 	// Set config for step 1. sw mode, one-shot mode, 
 	// use fifo0, use channel 0. STEPCONFIG1 register
-	HWREG(0x44e0d064) = 0x0000 | (0x0<<26) | (0x00<<19) | (0x00<<15) | (average<<2) | (0x01);
+	// 			range_check 	| FIFO_select 	| SEL_INP_SWC 	| SEL_INM_SWC 	| Averaging 	| Mode
+	HWREG(0x44e0d064) = 	0x0000 		| (0x0<<26) 	| (0x00<<19) 	| (0x00<<15) 	| (average<<2) 	| (0x01);
 
 	// Set delays for step 1. STEPDELAY1 register
 	HWREG(0x44e0d068) = 0x0000 | (sample_delay - 1)<<24 | open_delay;
 
 	// Set config for step 2. sw mode, one-shot mode, 
 	// use fifo1, use channel 1. STEPCONFIG2 register
-	HWREG(0x44e0d06c) = 0x0000 | (0x1<<26) | (0x01<<19) | (0x01<<15) | (average<<2) | (0x01);
+	// 			range_check 	| FIFO_select 	| SEL_INP_SWC 	| SEL_INM_SWC 	| Averaging 	| Mode
+	//HWREG(0x44e0d06c) = 	0x0000 		| (0x1<<26)	| (0x01<<19)	| (0x01<<15) 	| (average<<2) 	| (0x01);
+	HWREG(0x44e0d06c) = 	0x0000 		| (0x0<<26)	| (0x00<<19)	| (0x00<<15) 	| (average<<2) 	| (0x01);
 
 	// Set delays for step 2. STEPDELAY2 register
 	HWREG(0x44e0d070) = 0x0000 | (sample_delay - 1)<<24 | open_delay;
@@ -542,8 +556,6 @@ void init_adc(){
 	/* // Set delays for step 7. STEPDELAY7 register */
 	/* HWREG(0x44e0d098) = 0x0000 | ((sample_delay - 1)<<24) | open_delay; */
 
-	// Lock step config register. ADC_CTRL register
-	HWREG(0x44e0d040) &= ~(0x01 << 2);
 	
 	// Clear FIFO0 by reading from it. FIFO0COUNT, FIFO0DATA registers
 	unsigned int count = HWREG(0x44e0d0e4);
@@ -561,6 +573,9 @@ void init_adc(){
 
 	// Enable tag channel id. ADC_CTRL register
 	HWREG(0x44e0d040) |= 0x02;
+
+	// Lock step config register. ADC_CTRL register
+	HWREG(0x44e0d040) &= ~(0x01 << 2);
 
 	// Enable steps 1-4. STEPENABLE register
 	/* HWREG(0x44e0d054) = 0x1e; */
