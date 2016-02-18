@@ -1,500 +1,500 @@
-vi pru.c
-fg
-vimdiff pru.c ../gpio/pru.c
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-fg
-make
-./host
-fg
-make
-./host 
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-poweroff
+top
+cd PRU/bbb-pru/apps/touchpad
+cd ..
+cd touchpad_WORKING_6CHs
 ls
-cd PRU/
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
-make
 ./host
 fg
-ls
 vi pru.c
 make
 ./host
-./host
-fg
-make
-./host
-fg
-make
-./host
-vi host.c
-fg
-make
-./host
-fg
-make
-./host
-./host
-fg
-make
-./host
-fg
-ls
-cp pru.c pru.c.backup
-vi pru.c
-make
-./host
-ls
-cd ..
-ls
-cd ..
-ls
-cd device-tree-overlay/
-ls
-vi PRU-DTO.dts 
-ls
-cd ..
-cd device-tree-overlay/
-vi Makefile 
-make install
-make load
-ls
-cd ..
-ls
-cd apps/
-ls
-cd touchpad/
-ls
-./hosc
-./host
-ls
-vi host
-vi host.c
-fg
-make
-./host
-fg
-ls
-cd ..
-ls
-cd ..
-ls
-cd device-tree-overlay/
-ls
-vi PRU-DTO.dts 
-make
-fg
-ls
-vi PRU-DTO.dts
-make
-ls
-vi PRU-DTO.dts 
-fg
-make
-make install
-make load
-ls
-cd ..
-ls
-cd apps/
-ls
-cd touchpad/
-ls
-make
-./host
-ls
-ls
-ls
-fg
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-ls
-cd ..
-ls
-cd interrupts/
-ls
-ci pru.
-vi pru.c
-ls
-cd ..
-ls
-cd adc/
-ls
-vi pru.c
-ls
-fg
-make
-./host
-ls
-cd ..
-ls
-cd touchpad/
-ls
-make
-./host
-ls
-fg
-./host
-fg
-make
-./host
-ls
-fg
-make
-fg
-make
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-fg
-make
-./host
-fg
-make
-./host
-fg
-make
-./host
-fg
-./host
-fg
-make
-./host
-fg
-make
-./host
-ghg
-fg
-make
-./host
-fg
 fg
 reboot
-ls
-cd PRU/
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
+top
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
 make
 ./host
 fg
+vi pru.c
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+vi host.c
+make
+./host
+fg
+fg
+make
+./host
+fg
+vi host.c
+make
+./host
+  fg
+reboot
+top
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+vi pru.c
+fg
+vi pru.c
+make
+./host
+fg
+poweroff
+top
+top
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+fg
+make
+fg
+make
+./host
+fg
+fg
+make
+./host
+./host
+reboot
+top
+cd PRU/bbb-pru/apps/touchpad_
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
 vi pru.c
 make
+./host
+fg
+./host
+fg
+poweroff
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+./host
+ls
+vi pru.c
+make
+fg
+make
+./host
+fg
+./host
+fg
+cd ../touchpad_WORKING_6CHs_backup/
+make
+./host
+fg
+vi pru.c
+./host
+fg
+vi pru.c
+./host
+fg
+./host
+fg
+fg
+c
+cd ../touchpad_WORKING_6CHs
+fg
+make
+./host
+fg
+vi pru.c
+make
+./host
+fg
+make
+./host
+fg
+vi pru.c
+make
+./host
+fg
+fg
+make
+./host
+fg
+make
+fg
+make
+./shot
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+mkae
+make
+fg
+make
+./host
+ls
+cd pru.c
+vi pru.c
+make
+fg
+fg
+make
+./host
+fg
+make
+./host
+fg
+make
+./host
+fg
+reboot
+top
+cd PRU/bbb-pru/apps/touchpad
+cd ..
+cd touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+make
+./host
+fg
+make
+fg
+make
+./host
+reboot
+top
+top
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+make
+fg
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+./host
+reboot
+top
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+#
+git
+git status
+git add .
+git commit
+git push origin
+git push
+git config --global user.name "Jingun"
+git config --global user.email "zzongaly@gmail.com"
+git init
+git remote add origin http://143.248.56.38:8085/zzongaly/d-feedback.git
+git push
+git push origin master
+git add .
+git status
+git commit
+git push -u origin master
+fg
+vi pru.c
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+reboot
+top
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+./host
+vi pru.c
+make
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad
+cd ..
+cd touchpad_WORKING_6CHs
 ls
 ./host
 fg
-./host
-make
+vi pru.c
+reboot
+top
+top
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ./host
 fg
-make
-./host
+vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
-fg
+vi pru.c
 make
-./host
-fg
-make
-./host
 fg
 ./host
+reboot
+top
+reboot
+cd PRU/bbb-pru/apps/
 ls
+cd touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+top
+vi ../touchpad_WORKING_6CHs_backup/pru.c
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+fg
+vi pru.c
+make
+fg
+vi pru.c
+make
 fg
 make
 ./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+top
+fg
+vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi host.c
+cd ..
+cp touchpad_WORKING_6CHs touchpad_WORKING_6CHs_backup_sinewave
+cp -r  touchpad_WORKING_6CHs touchpad_WORKING_6CHs_backup_sinewave
+ls
+ls touchpad_WORKING_6CHs_backup_sinewave/
+cd touchpad_WORKING_6CHs
+vi host.c
+make
+./host
+make
+fg
+make
+make
+make
+make
+rebiit
+reboot
+ls
+cd PRU/bbb-pru/apps/
+ls
+vi touchpad_WORKING_6CHs
+cd touchpad_WORKING_6CHs
+ls
+vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pruc.
+vi pru.c
+top
+fg
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+make
+make
+make
+maek
+make
+make
+make
+make
+make
+make
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.v
+vi pru.c
+fg
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+make
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ci pru.c
+vi pru.c
+make
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+vi host.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi host.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi host.c
+vi pru.c
+make
+vi host.c
+make
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi host.c
+vi pru.c
+make
+fg
+make
+fg
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+make
+./host
+make
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+make
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
+vi pru.c
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+make
+fg
+fg
+fg
 fg
 make
 reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
-ls
-cd P
-cd PRU/bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
-ls
-make
-./host
-fg
+vi pru.c
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
 vi pru.c
 make
-./host
-fg
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ls
 make
 ./host
-fg
-fg
-make
-./host
-fg
-make
-./host
-ls
-cd PRU/
-ls
-cd bbb-pru/
-ls
-l
-ls
-cd ..
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd adc
-ls
+top
 vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 ls
-cd PRU/
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad/
-ls
+./host
+fg
+vi pru.c
+make
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+ci pru.c
+vi pru.c
+reboot
+reboot
+top
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+make
+./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+./host
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+vi pru.c
+top
+make
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
+make
+./host
 vi host.c
+reboot
+cd PRU/bbb-pru/apps/touchpad+_
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 vi pru.c
-ls
-make
-vi host.c
-make
-fg
-fg
-ls
-ls ../adc
-vi Makefile 
-ls
-make
-ls
-fg
-fg
-fg
-ls
-cd ..
-ls
-cp -r adc touchpad2
-ls
-cd touchpad
-ls
-cd ..
-cd touchpad2
-ls
-mv pru.c pru.c.backup
-ls
-cd ..
-ls
-cp touchpad/pru.c touchpad2/pru.c
-cd touchpad2
-ls
+top
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 make
 ./host
-./host
-./host
-ls
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 vi pru.c
+top
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 make
 ./host
-fg
-make
-./host
-fg
-./host
-fg
-vi host.c
-make
-fg
-make
-./host
-https://kr.battle.net/shop/ko/checkout/inicis-credit-card/86714241-331000137610000
-ls
-vi pru.c
-fg
-make
-./host
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 fg
 vi pru.c
-fg 1
-ls
-ls
+reboot
+cd PRU/bbb-pru/apps/touchpad_WORKING_6CHs
 make
 ./host
-ls
-vi out.wav
-fg
-fg 2
-make
-ls
-./host 
-./host 
-./host 
-fg
-ls
-ls
-./host 
-./host 
-./host 
-./host 
-./host 
-./host 
-./host 
-./host 
-./host 
-./host 
-fg
-fg
-make
-./host
-./host
-fg
-make
-./host
-fg 2
-fg 1
-make
-/host
-./host 
-fg
-make
-./host
-fg
-fg 2
-fg 
-make
-./host
-fg
-make
-./host
-./host
-./host
-./host
-./host
-fg
-poweroff
-ps aux
-kill 5567
-ls
-cd PRU/
-ls
-cd bbb-pru/
-ls
-cd apps/
-ls
-cd touchpad2
-ls
-./host
-ls
-make
-./host
-fg
-./host
-vi pru.c
-make
-ls
-./host
-poweroff
-ls
-cd PRU/
-cd bbb-pru/apps/touchpad2
-ls
-make
-./host
-vi pru.c
-make
-./host
-git add .
-git commit
-git push
-git push
-cd /
-git push
-cd ~
-git push
-git diff
-git add.
-git add .
-git commit
-git push
